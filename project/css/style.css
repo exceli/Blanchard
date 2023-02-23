@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-SemiBoldItalic.eot');
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'),
+    url('OpenSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-SemiBoldItalic.woff') format('woff'),
+    url('OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 12px;
+}
+
+/* glob */
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 160px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* header */
+.header {
+  padding: 30px 0;
+  background-color: #000;
+}
+
+.header__container {
+  text-align: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.nav__link {
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.header__login {
+  background-image: url(../img/header/login.svg);
+  padding-left: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
