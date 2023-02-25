@@ -8,6 +8,7 @@
   <title>Blanchard</title>
   <link rel="icon" type="image/x-icon" href="./img/blanchard_favicon.svg">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -29,8 +30,8 @@
       <a class="header__login" href="#">Войти</a>
     </div>
   </header>
-  <main class="main">
-    <section class="main__section">
+  <main>
+    <section class="main">
       <div class="main__menu">
         <div class="container main__menu__container flex">
           <ul class="main__menu__list list-reset flex">
@@ -81,7 +82,7 @@
     </section>
     <section class="abount-us">
       <div class="container about-us__container">
-        <h2 class="abount-us__header">О нас</h2>
+        <h2 class="abount-us__head">О нас</h2>
         <p class="about-us__content">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо
           распределения
@@ -92,6 +93,63 @@
           внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия
           представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть
           разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container gallery__container flex">
+        <div class="gallery__left-block">
+          <h2 class="gallery__head">Галерея</h2>
+          <p class="gallery__filter">Фильтр:</p>
+          <div class="gallery__drop-list">
+            <select class="js-choice gallery__drop-list__choice">
+              <option class="gallery__drop-list__item" value="">Живопись</option>
+            </select>
+          </div>
+          <div class="checkbox gallery__checkbox">
+            <ul class="checkbox__list list-reset">
+              <li class="checkbox__item" tabindex="0">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="" id="">
+                  <span class="checkbox__text">XIX&nbsp;век</span>
+                </label>
+              </li>
+              <li class="checkbox__item" tabindex="0">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="" id="">
+                  <span class="checkbox__text">XX&nbsp;век</span>
+                </label>
+              </li>
+              <li class="checkbox__item" tabindex="0">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="" id="">
+                  <span class="checkbox__text">Современность</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gallery__right-block">
+          <div class="gallery__right-block__pages flex">
+            <button class="gallery-right-block__preview btn-reset"><svg width="7" height="12" viewBox="0 0 7 12"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+              </svg>
+            </button>
+            <p class="gallery-right-block__page">1 / 2</p>
+            <button class="gallery-right-block__next btn-reset"><svg width="7" height="12" viewBox="0 0 7 12"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
+              </svg>
+            </button>
+          </div>
+          <div class="gallery__right-block__images">
+            <ul class="gallery__list list-reset flex">
+              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_1.png" alt=""></li>
+              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_2.png" alt=""></li>
+              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_3.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>

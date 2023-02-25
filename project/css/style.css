@@ -128,9 +128,7 @@ body {
 }
 
 /* main */
-.main {}
-
-.main__section {
+.main {
   background-image: url(../img/main/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -223,10 +221,10 @@ body {
 
 /* about us */
 .abount-us {
-  padding: 80px 0;
+  padding: 80px 0 70px;
 }
 
-.abount-us__header {
+.abount-us__head {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
@@ -240,4 +238,128 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #333333;
+}
+
+/* gallery */
+.gallery {
+  padding: 80px 0;
+  background-image: url(../img/main/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.gallery__container {
+  position: relative;
+}
+
+.gallery__left-block {
+  margin-right: 50px;
+}
+
+.gallery__head {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: #fff;
+}
+
+.gallery__filter {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery__drop-list__choice {
+  min-width: 400px;
+  padding: 7px 10px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery__drop-list__choice::before {
+  color: #9D5CD0;
+}
+
+.gallery__checkbox {
+  position: absolute;
+  bottom: 0px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input+.checkbox__text {
+  vertical-align: middle;
+}
+
+.checkbox__input+.checkbox__text::before {
+  content: '';
+  display: inline-block;
+  margin-right: 12px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+}
+
+.checkbox__input:checked+.checkbox__text::before {
+  border-color: #C283F3;
+  background-image: url(../img/main/Gallery_checkbox_select.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 4px;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery__right-block {
+  margin-top: 24px;
+}
+
+.gallery__right-block__pages {
+  margin-left: 3px;
+  margin-bottom: 29px;
+  align-items: center;
+}
+
+.gallery-right-block__preview {
+  margin-right: 17px;
+  padding: 5px 12px;
+  background: #666;
+  border-radius: 50%;
+}
+
+.gallery-right-block__page {
+  margin-right: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery-right-block__next {
+  padding: 5px 12px;
+  background: #666;
+  border-radius: 50%;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 50px;
 }
