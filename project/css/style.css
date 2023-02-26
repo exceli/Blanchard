@@ -220,11 +220,11 @@ body {
 }
 
 /* about us */
-.abount-us {
+.about-us {
   padding: 80px 0 70px;
 }
 
-.abount-us__head {
+.about-us__head {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
@@ -248,7 +248,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-position: center; */
 }
 
 .gallery__container {
@@ -339,14 +338,14 @@ body {
   align-items: center;
 }
 
-.gallery-right-block__preview {
+.gallery__right-block__preview {
   margin-right: 17px;
   padding: 5px 12px;
   background: #666;
   border-radius: 50%;
 }
 
-.gallery-right-block__page {
+.gallery__right-block__page {
   margin-right: 19px;
   font-weight: 400;
   font-size: 16px;
@@ -354,7 +353,7 @@ body {
   color: #fff;
 }
 
-.gallery-right-block__next {
+.gallery__right-block__next {
   padding: 5px 12px;
   background: #666;
   border-radius: 50%;
@@ -362,4 +361,105 @@ body {
 
 .gallery__item:not(:last-child) {
   margin-right: 50px;
+}
+
+/* catalog */
+.catalog {
+  padding: 80px 0;
+}
+
+.catalog__header {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: #333;
+}
+
+.catalog__content {
+  max-width: 68%;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+.catalog__wrap__left {
+  min-width: 740px;
+  margin-right: 50px;
+}
+
+.catalog__wrap__left__img {
+  margin-bottom: 31px;
+}
+
+.catalog__wrap__left__head {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333;
+}
+
+.catalog__wrap__left__years {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.catalog__wrap__left__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+.catalog__years__item {
+  position: relative;
+  min-width: 800px;
+  padding: 41px 0;
+  cursor: pointer;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
+}
+
+.catalog__years__item:first-child {
+  border-color: #CACACA;
+}
+
+.catalog__years__btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+.catalog__years__item svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.catalog__years__content {
+  border-bottom: 1px solid #CACACA;
+}
+
+.catalog__years__content__list {
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.catalog__years__content__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+.catalog__years__content__item:not(:last-child) {
+  margin-right: 61px;
 }
