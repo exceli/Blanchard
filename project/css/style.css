@@ -654,6 +654,11 @@ body {
 /* map */
 .map {
   min-height: 700px;
+  filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
 }
 
 /* footer */
