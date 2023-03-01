@@ -650,3 +650,26 @@ body {
 .contacts__social__wrap svg:not(:last-child) {
   margin-right: 16px;
 }
+
+/* map */
+.map {
+  min-height: 700px;
+}
+
+/* footer */
+.footer {
+  padding: 50px 0;
+  background-color: #000;
+}
+
+.footer__container {
+  justify-content: space-between;
+}
+
+.footer__social__wrap {
+  margin-top: -3px;
+}
+
+.footer__vk {
+  margin-right: 20px;
+}
