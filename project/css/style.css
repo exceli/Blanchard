@@ -56,6 +56,14 @@ img {
   font-display: swap;
 }
 
+:root {
+  --header-background: #000;
+  --text-on-dark-background: #fff;
+  --focus-href-color: #7943A4;
+  --hover-href-color: #C283F3;
+  --active-href-color: #7943A4;
+}
+
 body {
   min-width: 320px;
   font-family: 'OpenSans', sans-serif;
@@ -92,7 +100,7 @@ body {
 /* header */
 .header {
   padding: 30px 0;
-  background-color: #000;
+  background-color: var(--header-background);
 }
 
 .header__container {
@@ -102,7 +110,7 @@ body {
 }
 
 .header__href {
-  margin-right: 179px;
+  margin-right: 173px;
 }
 
 .header__nav {
@@ -110,21 +118,62 @@ body {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 62px;
+  margin-right: 50px;
 }
 
 .nav__link {
+  padding: 2px 6px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-on-dark-background);
+  transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.nav__link:focus {
+  background-color: var(--focus-href-color);
+}
+
+.nav__link:hover {
+  color: var(--hover-href-color);
+  background-color: var(--header-background);
+}
+
+.nav__link:active {
+  color: var(--active-href-color);
 }
 
 .header__login {
   margin-left: auto;
-  padding-left: 80px;
-  background-image: url(../img/header/login.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
+  margin-right: -7px;
+  padding: 7px 6px;
+  color: var(--text-on-dark-background);
+  transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.header__login svg {
+  margin-right: 6px;
+  fill: var(--text-on-dark-background);
+  transition: fill .1s ease-in-out;
+}
+
+.header__login:focus {
+  background-color: var(--focus-href-color);
+}
+
+.header__login:hover {
+  color: var(--hover-href-color);
+  background-color: var(--header-background);
+}
+
+.header__login:hover svg {
+  fill: var(--hover-href-color);
+}
+
+.header__login:active {
+  color: var(--active-href-color);
+}
+
+.header__login:active svg {
+  fill: var(--active-href-color);
 }
 
 /* main */
