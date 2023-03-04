@@ -690,6 +690,44 @@ body {
   color: #333;
 }
 
+.project__content svg {
+  cursor: pointer;
+  fill: #fff;
+  transition: fill var(--animation-time) ease-in-out;
+}
+
+.project__content svg:hover {
+  fill: var(--c-purple-1);
+}
+
+.project__content svg:active {
+  fill: var(--c-purple-3);
+}
+
+.project__content__href {
+  padding: 2px 4px;
+  color: var(--c-purple-3);
+  transition: color var(--animation-time) ease-in-out, background-color var(--animation-time) ease-in-out, border var(--animation-time) ease-in-out;
+}
+
+.project__content__href:focus {
+  color: var(--c-white);
+  background-color: var(--c-purple-3);
+}
+
+.project__content__href:hover {
+  margin-left: 4px;
+  padding: 2px 0;
+  color: var(--c-purple-3);
+  background-color: transparent;
+  border-bottom: 1px solid var(--c-purple-3);
+}
+
+.project__content__href:active {
+  color: var(--c-purle-4);
+  border-color: var(--c-purle-4);
+}
+
 .project__partners__head {
   margin-bottom: 23px;
   font-weight: 600;
@@ -703,8 +741,62 @@ body {
   margin-bottom: 80px;
 }
 
-.project__partners__preview {
+.project__partners__btn-left {
   margin-right: 45px;
+}
+
+.project__partners__btn-left svg {
+  transition: outline var(--animation-time) ease-in-out;
+}
+
+.project__partners__btn-right svg {
+  transition: outline var(--animation-time) ease-in-out;
+}
+
+.project__partners__btn-left path {
+  fill: #ECECEC;
+  transition: fill var(--animation-time) ease-in-out;
+}
+
+.project__partners__btn-right path {
+  fill: #ECECEC;
+  transition: fill var(--animation-time) ease-in-out;
+}
+
+.project__partners__btn-left:focus svg {
+  border-radius: 50%;
+  outline: 2px solid var(--c-purple-3);
+}
+
+.project__partners__btn-right:focus svg {
+  border-radius: 50%;
+  outline: 2px solid var(--c-purple-3);
+}
+
+.project__partners__btn-left:hover path {
+  fill: var(--c-purple-1);
+}
+
+.project__partners__btn-right:hover path {
+  fill: var(--c-purple-1);
+}
+
+.project__partners__btn-left:hover svg {
+  outline: none;
+}
+
+.project__partners__btn-right:hover svg {
+  outline: none;
+}
+
+.project__partners__btn-left:active svg {
+  fill: var(--c-purple-1);
+  outline: 2px solid var(--c-purple-3);
+}
+
+.project__partners__btn-right:active svg {
+  fill: var(--c-purple-1);
+  outline: 2px solid var(--c-purple-3);
 }
 
 .project__partners__item {
@@ -718,10 +810,22 @@ body {
   margin-right: 50px;
 }
 
-.project__partners__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+.project__partners__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project__partners__freelands img {
+  width: 244px;
+  height: 63px;
+}
+
+.project__partners__ica img {
+  width: 330px;
+  height: 59px;
 }
 
 /* contacts */
@@ -813,5 +917,6 @@ body {
 }
 
 .footer__vk {
+
   margin-right: 20px;
 }
