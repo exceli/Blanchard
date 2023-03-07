@@ -673,6 +673,10 @@ body {
 }
 
 /* project */
+.project {
+  margin-bottom: 80px;
+}
+
 .project__head {
   margin-bottom: 16px;
   font-weight: 400;
@@ -736,13 +740,12 @@ body {
   color: #333;
 }
 
-.project__partners__list {
-  align-items: center;
-  margin-bottom: 80px;
-}
-
 .project__partners__btn-left {
   margin-right: 45px;
+}
+
+.project__partners__btn-right {
+  margin-left: 45px;
 }
 
 .project__partners__btn-left svg {
@@ -803,29 +806,79 @@ body {
   text-align: center;
   width: 450px;
   height: 150px;
-  border: 1px solid #CACACA;
 }
 
 .project__partners__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.project__partners__item a {
+.product__partners__href {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  border: 1px solid #CACACA;
 }
 
-.project__partners__freelands img {
+.product__partners__href:focus {
+  border-color: var(--c-purple-3);
+}
+
+.product__partners__href:hover {
+  border-color: #CACACA;
+}
+
+.product__partners__href:active {
+  border-color: var(--c-purple-3);
+}
+
+.product__partners__href .project__partners__freelands {
+  background-image: url(../img/main/project-partners_1_gray.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 244px;
   height: 63px;
+  transition: background-image var(--animation-time) ease-in-out;
 }
 
-.project__partners__ica img {
+.product__partners__href:hover .project__partners__freelands {
+  background-image: url(../img/main/project-partners_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__partners__href .project__partners__ica {
+  background-image: url(../img/main/project-partners_2_gray.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 330px;
   height: 59px;
+  transition: background-image var(--animation-time) ease-in-out;
+}
+
+.product__partners__href:hover .project__partners__ica {
+  background-image: url(../img/main/project-partners_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__partners__href .project__partners__workhouse {
+  background-image: url(../img/main/project-partners_3_gray.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 229px;
+  height: 53px;
+  transition: background-image var(--animation-time) ease-in-out;
+}
+
+.product__partners__href:hover .project__partners__workhouse {
+  background-image: url(../img/main/project-partners_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* contacts */

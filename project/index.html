@@ -422,7 +422,7 @@
         </p>
         <div class="project__partners">
           <h3 class="project__partners__head">Партнёры проектов:</h3>
-          <ul class="project__partners__list list-reset flex">
+          <div class="partners__wrap flex">
             <button class="project__partners__btn-left btn-reset">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -430,21 +430,23 @@
                 <path d="M16 20L11 15L16 10" stroke="black" />
               </svg>
             </button>
-            <li class="project__partners__item project__partners__freelands flex">
-              <a href="#">
-                <img src="./img/main/project-partners_1_gray.png" alt="">
-              </a>
-            </li>
-            <li class="project__partners__item project__partners__ica flex">
-              <a href="#">
-                <img src="./img/main/project-partners_2.png" alt="">
-              </a>
-            </li>
-            <li class="project__partners__item  project__partners__workhouse flex">
-              <a href="#">
-                <img src="./img/main/project-partners_3.png" alt="">
-              </a>
-            </li>
+            <ul class="project__partners__list list-reset flex">
+              <li class="project__partners__item flex">
+                <a class="product__partners__href" href="#">
+                  <div class="project__partners__freelands"></div>
+                </a>
+              </li>
+              <li class="project__partners__item flex">
+                <a class="product__partners__href" href="#">
+                  <div class="project__partners__ica"></div>
+                </a>
+              </li>
+              <li class="project__partners__item flex">
+                <a class="product__partners__href" href="#">
+                  <div class="project__partners__workhouse"></div>
+                </a>
+              </li>
+            </ul>
             <button class="project__partners__btn-right btn-reset">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -452,7 +454,7 @@
                 <path d="M14 20L19 15L14 10" stroke="black" />
               </svg>
             </button>
-          </ul>
+          </div>
         </div>
       </div>
     </section>
