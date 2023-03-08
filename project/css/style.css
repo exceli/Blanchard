@@ -1046,7 +1046,23 @@ body {
   margin-top: -3px;
 }
 
-.footer__vk {
+.footer__social__href svg {
+  fill: #CACACA;
+  transition: fill var(--animation-time) ease-in-out;
+}
 
+.footer__social__href:focus svg {
+  fill: var(--c-white);
+}
+
+.footer__social__href:hover svg {
+  fill: var(--c-white);
+}
+
+.footer__social__href:active svg {
+  fill: var(--c-purple-3);
+}
+
+.footer__vk {
   margin-right: 20px;
 }
