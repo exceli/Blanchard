@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -17,6 +18,11 @@
 <body>
   <header class="header">
     <div class="container header__container flex">
+      <button class="burger btn-reset" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
       <a class="header__href" href="#"><img class="header__logo" src="./img/header/blanchard_logo.png"
           alt="Blanchard"></a>
       <nav class="nav header__nav">
@@ -35,6 +41,14 @@
             d="M5.62056 9.09278L6.63889 10.1111L10.25 6.5L6.63889 2.88889L5.62056 3.90722L7.48389 5.77778H0.5V7.22222H7.48389L5.62056 9.09278ZM12.0556 0H1.94444C1.14278 0 0.5 0.65 0.5 1.44444V4.33333H1.94444V1.44444H12.0556V11.5556H1.94444V8.66667H0.5V11.5556C0.5 12.35 1.14278 13 1.94444 13H12.0556C12.85 13 13.5 12.35 13.5 11.5556V1.44444C13.5 0.65 12.85 0 12.0556 0Z" />
         </svg>Войти
       </a>
+      <button aria-label="Найти" class="header__search btn-reset" id="open-search-form">
+        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="9.15446" height="2.28862"
+            transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" />
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -151,9 +165,9 @@
           </div>
           <div class="gallery__right-block__images">
             <ul class="gallery__list list-reset flex">
-              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_1.png" alt=""></li>
-              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_2.png" alt=""></li>
-              <li class="gallery__item"><img class="gallery__img" src="./img/main/Gallery_3.png" alt=""></li>
+              <li class="gallery__item"></li>
+              <li class="gallery__item"></li>
+              <li class="gallery__item"></li>
             </ul>
           </div>
         </div>

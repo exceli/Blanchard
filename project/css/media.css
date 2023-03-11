@@ -1,0 +1,127 @@
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  /* header */
+  .header {
+    padding: 30px 0;
+  }
+
+  .header__href {
+    margin: 0;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+
+  .burger__line {
+    position: absolute;
+    height: 3.65px;
+    left: 0;
+    background-color: #fff;
+  }
+
+  .burger__line:nth-child(1) {
+    width: 36px;
+    transform: translateY(-12px);
+  }
+
+  .burger__line:nth-child(2) {
+    width: 28.2px;
+  }
+
+  .burger__line:nth-child(3) {
+    width: 24px;
+    transform: translateY(11px);
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__login {
+    display: none;
+  }
+
+  .header__search {
+    display: block;
+  }
+
+  /* main */
+  .main {
+    background-image: url(../img/main/size-1024/main-background-img_1_1024.png);
+  }
+
+  .main__menu {
+    display: none;
+  }
+
+  .main__content {
+    padding: 105px 0;
+  }
+
+  .main__content__head {
+    margin-bottom: -10.5px;
+  }
+
+  .main__content__content {
+    max-width: 80%;
+    margin-bottom: 133px;
+  }
+
+  .main__content__btn {
+    margin-bottom: 9.5px;
+  }
+
+  /* about-us */
+  .about-us__content {
+    max-width: 100%;
+  }
+
+  /* gallery */
+  .gallery {
+    background-image: url(../img/main/size-1024/gallery-background-img_1024.png);
+  }
+
+  .gallery__drop-list__choice {
+    min-width: 280px;
+  }
+
+  .gallery__drop-list {
+    margin-bottom: 106px;
+  }
+
+  .gallery__checkbox {
+    margin-bottom: 35px;
+  }
+
+  .gallery__item {
+    min-width: 280px;
+    min-height: 315px;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .gallery__item:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  .gallery__item:first-child {
+    background-image: url(../img/main/size-1024/gallery-img_1_1024.png);
+  }
+
+  .gallery__item:nth-child(2) {
+    background-image: url(../img/main/size-1024/gallery-img_2_1024.png);
+  }
+
+  .gallery__item:nth-child(3) {
+    display: none;
+  }
+}

@@ -182,9 +182,30 @@ body {
   fill: var(--c-purle-4);
 }
 
+.header__search {
+  display: none;
+}
+
+.header__search svg {
+  fill: var(--c-white);
+  transition: fill var(--animation-time) ease-in-out;
+}
+
+.header__search:focus svg {
+  fill: var(--c-purple-3);
+}
+
+.header__search:hover svg {
+  fill: var(--c-purple-3);
+}
+
+.header__search:active svg {
+  fill: var(--c-purle-4);
+}
+
 /* main */
 .main {
-  background-image: url(../img/main/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.png);
+  background-image: url(../img/main/main-background-img_1_1920.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -332,7 +353,7 @@ body {
 /* gallery */
 .gallery {
   padding: 80px 0;
-  background-image: url(../img/main/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.png);
+  background-image: url(../img/main/gallery-background-img_1920.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -490,6 +511,26 @@ body {
 
 .gallery__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.gallery__item {
+  min-width: 350px;
+  min-height: 350px;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.gallery__item:first-child {
+  background-image: url(../img/main/gallery-img_1_1920.png);
+}
+
+.gallery__item:nth-child(2) {
+  background-image: url(../img/main/gallery-img_2_1920.png);
+}
+
+.gallery__item:nth-child(3) {
+  background-image: url(../img/main/gallery-img_3_1920.png);
 }
 
 /* catalog */
