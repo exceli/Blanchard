@@ -620,11 +620,14 @@ body {
 }
 
 .catalog__years__content__list {
+  display: none;
+  flex-wrap: wrap;
   margin-top: 25px;
   padding-bottom: 25px;
 }
 
 .catalog__years__content__item {
+  flex-direction: column;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;

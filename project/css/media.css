@@ -124,4 +124,34 @@
   .gallery__item:nth-child(3) {
     display: none;
   }
+
+  /* catalog */
+  .catalog__content {
+    max-width: 100%;
+  }
+
+  .catalog__wrap__left {
+    min-width: 437px;
+  }
+
+  .catalog__wrap__left__years {
+    margin-bottom: 16px;
+  }
+
+  .catalog__years__item {
+    min-width: 437px;
+  }
+
+  .catalog__years__content {
+    height: 435px;
+  }
+
+  .catalog__years__content__list {
+    display: none;
+  }
+
+  .catalog__years__content__item:not(:last-child) {
+    margin-right: 55px;
+  }
+
 }
