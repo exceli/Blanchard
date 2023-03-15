@@ -1073,12 +1073,16 @@ body {
 
 /* map */
 .map {
-  min-height: 700px;
   filter: grayscale(1);
   -ms-filter: grayscale(1);
   -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
   -o-filter: grayscale(1);
+}
+
+.map__wrap {
+  width: 100%;
+  height: 700px;
 }
 
 /* footer */
@@ -1089,6 +1093,7 @@ body {
 
 .footer__container {
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__social__wrap {
@@ -1114,4 +1119,11 @@ body {
 
 .footer__vk {
   margin-right: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.footer__ok {
+  width: 45px;
+  height: 45px;
 }
