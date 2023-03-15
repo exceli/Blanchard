@@ -154,6 +154,11 @@
     margin-right: 55px;
   }
 
+  /* events */
+  .events {
+    margin-bottom: 120px;
+  }
+
   .events__card:not(:last-child) {
     margin-right: 27px;
   }
@@ -185,6 +190,43 @@
   .events__card__head {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  /* project */
+  .project__content {
+    max-width: 100%;
+    margin-bottom: 21px;
+  }
+
+  .project__partners__btn-left {
+    margin-right: 23px;
+  }
+
+  .project__partners__btn-right {
+    margin-left: 23px;
+  }
+
+  .project__partners__item {
+    width: 384px;
+    height: 128px;
+  }
+
+  .project__partners__item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .project__partners__item:last-child {
+    display: none;
+  }
+
+  .project__partners__href .project__partners__freelands {
+    width: 210px;
+    height: 52px;
+  }
+
+  .project__partners__href .project__partners__ica {
+    width: 283px;
+    height: 49px;
   }
 
 }
