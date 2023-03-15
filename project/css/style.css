@@ -617,6 +617,7 @@ body {
 
 .catalog__years__content {
   border-bottom: 1px solid #CACACA;
+  height: 340px;
 }
 
 .catalog__years__content__list {
@@ -643,6 +644,10 @@ body {
   margin-bottom: 80px;
 }
 
+.events__card:not(:last-child) {
+  margin-right: 50px;
+}
+
 .events__head {
   margin-bottom: 16px;
   font-weight: 400;
@@ -654,7 +659,6 @@ body {
 .events__card__wrap {
   flex-direction: column;
   height: 100%;
-  margin-right: 50px;
 }
 
 .events__card__body {
@@ -674,6 +678,7 @@ body {
 
 .events__card__img {
   min-width: 500px;
+  max-height: 300px;
 }
 
 .events__card__place-and-time {

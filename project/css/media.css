@@ -154,4 +154,37 @@
     margin-right: 55px;
   }
 
+  .events__card:not(:last-child) {
+    margin-right: 27px;
+  }
+
+  .events__card__img {
+    min-width: 290px;
+    min-height: 200px;
+  }
+
+  .events__card__body {
+    padding: 13px 32px;
+    max-width: 290px;
+    padding-bottom: 46px;
+  }
+
+  .events__card__body__top {
+    margin-bottom: 23px;
+  }
+
+  .events__card__place-and-time {
+    text-align: right;
+    margin-bottom: 3px;
+  }
+
+  .events__card__place {
+    margin-bottom: 2px;
+  }
+
+  .events__card__head {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
 }
