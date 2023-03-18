@@ -42,7 +42,7 @@
         </svg>Войти
       </a>
       <button aria-label="Найти" class="header__search btn-reset" id="open-search-form">
-        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="9.15446" height="2.28862"
             transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" />
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -102,15 +102,15 @@
       </div>
     </section>
     <section id="about-us" class="about-us">
-      <div class="container about-us__container">
+      <div class="container c">
         <h2 class="about-us__head">О нас</h2>
         <p class="about-us__content">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо
           распределения
           внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип
-          будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели&nbsp;развития. Повседневная
+          будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная
           практика показывает, что высокое качество позиционных исследований создаёт необходимость включения
-          в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения
+          в производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения
           внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия
           представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть
           разоблачены.</p>
@@ -151,14 +151,14 @@
         </div>
         <div class="gallery__right-block">
           <div class="gallery__right-block__pages flex">
-            <button class="gallery__right-block__preview btn-reset"><svg width="7" height="12" viewBox="0 0 7 12"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="gallery__right-block__preview btn-reset"><svg viewBox="0 0 7 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
               </svg>
             </button>
             <p class="gallery__right-block__page">1 / 2</p>
-            <button class="gallery__right-block__next btn-reset"><svg width="7" height="12" viewBox="0 0 7 12"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="gallery__right-block__next btn-reset"><svg viewBox="0 0 7 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
               </svg>
             </button>
@@ -361,7 +361,7 @@
         <p class="project__content">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
           деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
           государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего
-          возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное&nbsp;информационно-пропагандистское
+          возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
           <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
@@ -441,10 +441,12 @@
           <h3 class="contacts__head">Шоурум &#8470;4</h3>
           <p class="contacts__address">Леонтьевский переулок, дом 5/1</p>
         </div>
-        <form class="contacts__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <input class="form-input contacts__form__name" type="text" placeholder="Имя*" name="Имя">
-          <input class="form-input contacts__form__phone" type="phone" placeholder="Телефон*" name="Телефон">
-          <button class="contacts__form__btn btn-reset">Заказать обратный звонок</button>
+        <form class="contacts__form form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form__wrap flex">
+            <input class="form__input form__name" type="text" placeholder="Имя*" name="Имя">
+            <input class="form__input form__phone" type="phone" placeholder="Телефон*" name="Телефон">
+          </div>
+          <button class="form__btn btn-reset">Заказать обратный звонок</button>
         </form>
         <div class="contacts__social">
           <p class="contacts__context">Связаться&nbsp;в&nbsp;один&nbsp;клик</p>

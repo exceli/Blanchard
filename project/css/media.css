@@ -53,6 +53,11 @@
     display: block;
   }
 
+  .header__search svg {
+    width: 30px;
+    height: 29px;
+  }
+
   /* main */
   .main {
     background-image: url(../img/main/size-1024/main-background-img_1_1024.png);
@@ -252,7 +257,7 @@
     margin-bottom: 32px;
   }
 
-  .contacts__form__btn {
+  .form__btn {
     padding: 11px 40px;
   }
 
@@ -275,4 +280,187 @@
     height: 60px;
   }
 
+}
+
+@media (max-width: 768px) {
+
+  /* header */
+  .header__logo {
+    width: 187.6px;
+    height: 40px;
+  }
+
+  .header__search svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* main */
+  .main {
+    background-image: url(../img/main/size-768/main-background-img_1_768.png);
+  }
+
+  .main__content__content {
+    max-width: 100%;
+  }
+
+  .about-us__content {
+    width: 150%;
+  }
+
+  /* gallery */
+  .gallery {
+    background-image: url(../img/main/size-768/gallery-background-img_768.png);
+  }
+
+  .gallery__container {
+    display: block;
+  }
+
+  .gallery__left-block {
+    margin-bottom: 40px;
+  }
+
+  .gallery__drop-list {
+    margin-bottom: 40px;
+  }
+
+  .gallery__checkbox {
+    position: relative;
+  }
+
+  .gallery__right-block__pages {
+    margin-left: 0;
+  }
+
+  .gallery__item {
+    min-width: 315px;
+    min-height: 330px;
+  }
+
+  .gallery__item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  .gallery__item:first-child {
+    background-image: url(../img/main/size-768/gallery-img_1_768.png);
+  }
+
+  .gallery__item:nth-child(2) {
+    background-image: url(../img/main/size-768/gallery-img_2_768.png);
+  }
+
+  /* catalog */
+  .catalog {
+    margin-bottom: 80px;
+  }
+
+  .catalog__content {
+    margin-bottom: 20px;
+  }
+
+  .catalog__wrap {
+    flex-direction: column-reverse;
+  }
+
+  .catalog__wrap__left__img {
+    min-width: 668px;
+    min-height: 419px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__wrap__left__years {
+    margin-bottom: 8px;
+  }
+
+  .catalog__years__list {
+    margin-bottom: 47px;
+  }
+
+  .catalog__years__content {
+    height: 335px;
+  }
+
+  /* events */
+  .events__card:last-child {
+    display: none;
+  }
+
+  .events__card:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .events__card__img {
+    min-width: 317px;
+    min-width: 200px;
+  }
+
+  .events__card__body {
+    min-width: 317px;
+    padding: 14px 18px 48px 34px;
+  }
+
+  .events__card__head {
+    max-width: 95%;
+  }
+
+  .events__card__text {
+    max-width: 95%;
+    margin-bottom: 30px;
+  }
+
+  /* project */
+  .project__content {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .project__partners__head {
+    margin-bottom: 29px;
+  }
+
+  .project__partners__item {
+    max-width: 263.8px;
+    max-height: 106px;
+  }
+
+  .project__partners__item:first-child {
+    margin-right: 34px;
+  }
+
+  .project__partners__freelands {
+    min-width: 210px;
+    min-height: 52px;
+  }
+
+  .project__partners__ica {
+    max-width: 217px;
+    max-height: 38px;
+  }
+
+  /* contacts */
+  .contacts__wrap {
+    margin-bottom: 30px;
+  }
+
+  .contacts__form {
+    display: block;
+  }
+
+  .form__wrap {
+    margin-bottom: 12px;
+  }
+
+  .form__input {
+    min-width: 323px;
+  }
+
+  .form__btn {
+    padding: 10px 29px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 48px 0;
+  }
 }

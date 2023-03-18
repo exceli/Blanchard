@@ -112,7 +112,8 @@ body {
 }
 
 .header__href {
-  margin-right: 173px;
+  margin-right: auto;
+  min-width: max-content;
 }
 
 .header__nav {
@@ -146,6 +147,7 @@ body {
 }
 
 .header__login {
+  min-width: max-content;
   margin-left: auto;
   margin-right: -7px;
   padding: 7px 6px;
@@ -228,6 +230,7 @@ body {
 }
 
 .main__menu__item {
+  min-width: max-content;
   font-weight: 400;
   font-size: 18px;
   line-height: 10px;
@@ -466,6 +469,11 @@ body {
   transition: background-color var(--animation-time) ease-in-out;
 }
 
+.gallery__right-block__preview svg {
+  width: 7px;
+  height: 12px;
+}
+
 .gallery__right-block__preview:focus {
   background-color: #666;
   outline: 2px solid var(--c-black);
@@ -494,6 +502,11 @@ body {
   transition:
     background-color var(--animation-time) ease-in-out,
     outline var(--animation-time) ease-in-out;
+}
+
+.gallery__right-block__next svg {
+  width: 7px;
+  height: 12px;
 }
 
 .gallery__right-block__next:focus {
@@ -979,7 +992,7 @@ body {
   margin-right: 80px;
 }
 
-.form-input {
+.form__input {
   min-width: 270px;
   margin-right: 20px;
   padding: 14px 23px;
@@ -987,16 +1000,16 @@ body {
   border-radius: 100px;
 }
 
-.form-input:focus-visible {
+.form__input:focus-visible {
   background-color: #ECECEC;
   outline: none;
 }
 
-.form-input:hover {
+.form__input:hover {
   background-color: #ECECEC;
 }
 
-.contacts__form__btn {
+.form__btn {
   padding: 11px 33px;
   border: 2px solid var(--c-purple-3);
   border-radius: 100px;
@@ -1009,18 +1022,18 @@ body {
     outline var(--animation-time) ease-in-out;
 }
 
-.contacts__form__btn:focus {
+.form__btn:focus {
   outline: 2px solid var(--c-purple-1);
   outline-offset: 3px;
 }
 
-.contacts__form__btn:hover {
+.form__btn:hover {
   outline: none;
   color: var(--c-white);
   background-color: var(--c-purple-3);
 }
 
-.contacts__form__btn:active {
+.form__btn:active {
   color: var(--c-white);
   outline: none;
   border-color: var(--c-purple-1);
