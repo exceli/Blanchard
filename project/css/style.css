@@ -654,6 +654,11 @@ body {
   margin-bottom: 80px;
 }
 
+.events__card {
+  width: 34.4%;
+  max-width: 500px;
+}
+
 .events__card:not(:last-child) {
   margin-right: 50px;
 }
@@ -686,11 +691,6 @@ body {
   margin-bottom: 64px;
 }
 
-.events-card__img {
-  min-width: 500px;
-  max-height: 300px;
-}
-
 .card-body__list {
   margin-bottom: 13px;
   font-weight: 600;
@@ -715,7 +715,7 @@ body {
   color: #333;
 }
 
-.events-card__body-detail {
+.card-body__detail {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -723,18 +723,18 @@ body {
   border-bottom: 1px solid var(--c-purple-3);
 }
 
-.events-card__body-detail:focus {
+.card-body__detail:focus {
   color: var(--c-white);
   background-color: var(--c-purple-3);
 }
 
-.events-card__body-detail:hover {
+.card-body__detail:hover {
   color: var(--c-purle-4);
   border-color: var(--c-purle-4);
   background-color: transparent;
 }
 
-.events-card__body-detail:active {
+.card-body__detail:active {
   color: #333;
   border-color: #333;
 }

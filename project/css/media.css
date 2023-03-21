@@ -156,14 +156,8 @@
     margin-right: 27px;
   }
 
-  .events-card__img {
-    min-width: 290px;
-    min-height: 200px;
-  }
-
   .events-card__body {
     padding: 13px 32px;
-    max-width: 290px;
     padding-bottom: 46px;
   }
 
@@ -360,6 +354,10 @@
   }
 
   /* events */
+  .events-card {
+    width: 50%;
+  }
+
   .events__card:last-child {
     display: none;
   }
@@ -368,13 +366,12 @@
     margin-right: 35px;
   }
 
-  .events-card__img {
-    min-width: 317px;
-    min-width: 200px;
+  .events__card:nth-child(2) {
+    margin-right: 0;
   }
 
   .events-card__body {
-    min-width: 317px;
+    /* min-width: 317px; */
     padding: 14px 18px 48px 34px;
   }
 
