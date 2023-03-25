@@ -225,12 +225,14 @@ body {
   align-items: center;
 }
 
-.main__menu-item:not(:last-child) {
-  margin-right: 97px;
+.main__menu-list {
+  justify-content: space-between;
+  width: 64.7%;
+  min-width: 700px;
 }
 
 .main__menu-item {
-  min-width: max-content;
+  /* min-width: max-content; */
   font-weight: 400;
   font-size: 18px;
   line-height: 10px;
@@ -959,7 +961,7 @@ body {
 }
 
 .form__input {
-  min-width: 270px;
+  width: 100%;
   margin-right: 20px;
   padding: 14px 23px;
   border: 1px solid #333;
@@ -1043,10 +1045,14 @@ body {
 }
 
 .social__whatsapp {
+  width: 40px;
+  height: 40px;
   fill: #30BF39;
 }
 
 .social__telegram {
+  width: 40px;
+  height: 40px;
   fill: #26A5E4;
 }
 
