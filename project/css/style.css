@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -206,16 +207,35 @@ body {
 }
 
 /* main */
-.main {
-  background-image: url(../img/main/main-background-img_1_1920.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: bottom;
+.main__container {
+  position: relative;
+  height: max-content;
+  overflow: hidden;
+}
+
+.swiper-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main__menu {
+  position: relative;
+  top: 0;
+  z-index: 2;
   padding: 23px 0;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -283,6 +303,10 @@ body {
 }
 
 .main__content {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
   padding: 63px 0;
 }
 
@@ -307,6 +331,7 @@ body {
 .main__content-btn {
   margin-bottom: 58.5px;
   padding: 22.5px 35px;
+  pointer-events: auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
