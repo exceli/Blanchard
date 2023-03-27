@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="./img/blanchard_favicon.svg">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
@@ -141,8 +142,10 @@
           <h2 class="gallery__head">Галерея</h2>
           <p class="gallery__filter">Фильтр:</p>
           <div class="gallery__drop-list">
-            <select class="js-choice gallery__drop-list-choice">
-              <option class="gallery__drop-list-item" value="">Живопись</option>
+            <select class="gallery__choice choice">
+              <option class="choice__item" value="">Живопись</option>
+              <option class="choice__item">Рисунок</option>
+              <option class="choice__item">Скульптура</option>
             </select>
           </div>
           <div class="checkbox gallery__checkbox">
@@ -543,6 +546,7 @@
   </footer>
   <script src="./js/map.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-const swiper1 = new Swiper('.swiper-container', {
+const main_swiper = new Swiper('.swiper-container', {
   // Цикличность
   loop: true,
 
@@ -9,14 +9,14 @@ const swiper1 = new Swiper('.swiper-container', {
   },
 });
 
-const swiper = new Swiper(".mySwiper", {
+const gallery_swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 50,
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   navigation: {
     nextEl: ".pages__next",
@@ -49,3 +49,10 @@ const swiper = new Swiper(".mySwiper", {
     }
   },
 });
+
+const element = document.querySelector(".gallery__choice")
+
+const choices = new Choices(element, {
+  searchEnabled: false,
+  itemSelectText: '',
+})
