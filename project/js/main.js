@@ -13,10 +13,10 @@ const gallery_swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 50,
 
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: ".pages__next",
@@ -46,6 +46,36 @@ const gallery_swiper = new Swiper(".mySwiper", {
     },
     320: {
       slidesPerView: 1,
+    }
+  },
+});
+
+const swiper = new Swiper(".partners__swiper", {
+  navigation: {
+    nextEl: ".partners__btn-right",
+    prevEl: ".partners__btn-left",
+  },
+
+  breakpoints: {
+    1250: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 35,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 35,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 35,
     }
   },
 });
