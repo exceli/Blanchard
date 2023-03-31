@@ -86,3 +86,5 @@ const choices = new Choices(element, {
   searchEnabled: false,
   itemSelectText: '',
 })
+
+new Accordion('.accordion-container');
