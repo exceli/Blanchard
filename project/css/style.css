@@ -764,6 +764,10 @@ body {
   background-color: var(--c-purple-3);
 }
 
+.catalog__item .catalog__item-wrap:focus .catalog__item-svg path {
+  fill: var(--c-purple-1);
+}
+
 .catalog__item .catalog__item-wrap:hover {
   border-top-color: var(--c-purple-3);
   border-bottom-color: var(--c-purple-3);
@@ -861,6 +865,67 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #333;
+}
+
+.catalog-drop__left {
+  width: 35%;
+  padding: 12px;
+  margin-right: 24px;
+  border: 2px solid #999;
+}
+
+.catalog-drop__left div {
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+}
+
+.catalog-drop__right {
+  padding: 30px 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.catalog-drop__header {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+.catalog-drop__content {
+  margin-bottom: 5px;
+  max-width: 55%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+}
+
+.catalog-drop__href {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--c-purple-3);
+  transition:
+    color var(--animation-time) ease-in-out,
+    outline var(--animation-time) ease-in-out;
+}
+
+.catalog-drop__href:focus {
+  outline: 1px solid var(--c-purple-3);
+  outline-offset: 3px;
+}
+
+.catalog-drop__href:hover {
+  color: var(--c-purple-4);
+  outline: none;
+}
+
+.catalog-drop__href:active {
+  color: #333;
+  outline: none;
 }
 
 /* events */

@@ -153,6 +153,18 @@
     min-width: 47.3%;
   }
 
+  .catalog-drop__left {
+    width: 100%;
+  }
+
+  .catalog-drop__right {
+    padding: 0;
+  }
+
+  .catalog-drop__content {
+    max-width: 100%;
+  }
+
   /* events */
   .events {
     margin-bottom: 122px;
@@ -371,10 +383,6 @@
     margin-bottom: 19px;
   }
 
-  .swiper-slide {
-    height: 330px;
-  }
-
   /* catalog */
   .catalog {
     margin-bottom: 80px;
@@ -419,6 +427,18 @@
   .catalog-drop__descr {
     column-gap: 42px;
     column-count: 3;
+  }
+
+  .catalog-drop__left {
+    width: 50%;
+  }
+
+  .catalog-drop__right {
+    padding: 35px 0;
+  }
+
+  .catalog-drop__content {
+    max-width: 70%;
   }
 
   /* events */
@@ -466,7 +486,6 @@
   }
 
   .partners__item {
-    max-width: 263.8px;
     max-height: 106px;
   }
 
@@ -521,8 +540,7 @@
   }
 }
 
-@media (max-width: 320px) {
-
+@media (max-width: 480px) {
   .container {
     padding: 0 15px;
   }
@@ -532,49 +550,11 @@
     padding: 12px 0;
   }
 
-  .burger {
-    width: 25px;
-    height: 21px;
-  }
-
-  .burger__line {
-    height: 2px;
-  }
-
-  .burger__line:nth-child(1) {
-    width: 25px;
-    transform: translateY(-9.5px);
-  }
-
-  .burger__line:nth-child(2) {
-    width: 16px;
-    transform: translateY(-1.5px);
-  }
-
-  .burger__line:nth-child(3) {
-    width: 10px;
-    transform: translateY(6.5px);
-  }
-
   .header__href img {
     height: 21px;
   }
 
-  .header__search svg {
-    width: 17px;
-  }
-
-  .header__search {
-    height: 21px;
-    display: flex;
-    align-items: end;
-  }
-
   /* main */
-  .main {
-    background-image: url(../img/main/size-320/main-background-img_1_320.png);
-  }
-
   .main__content {
     padding: 30px 0;
     padding-bottom: 35.5px;
@@ -631,8 +611,6 @@
   .gallery {
     padding: 50px 0;
     padding-bottom: 21px;
-    background-image: url(../img/main/size-320/gallery-background-img_320.png);
-    background-position: center;
   }
 
   .gallery__head {
@@ -643,15 +621,6 @@
 
   .gallery__filter {
     margin-bottom: 5px;
-  }
-
-  .gallery__drop-list {
-    margin-bottom: 30px;
-  }
-
-  .checkbox__list {
-    width: max-content;
-    margin-bottom: 30px;
   }
 
   .gallery__right-block {
@@ -678,14 +647,6 @@
     padding: 4.5px 11.5px;
   }
 
-  .gallery__left-block {
-    width: 100%;
-  }
-
-  .swiper-slide {
-    height: 367px;
-  }
-
   /* catalog */
   .catalog {
     padding: 50px 0;
@@ -706,7 +667,7 @@
     margin-bottom: 40px;
   }
 
-  .catalog__item-wrap {
+  .catalog__item .catalog__item-wrap {
     font-size: 18px;
     line-height: 32px;
   }
@@ -751,6 +712,18 @@
     margin-bottom: 13px;
   }
 
+  .catalog-drop__left {
+    width: 100%;
+  }
+
+  .catalog-drop__right {
+    padding: 0;
+  }
+
+  .catalog-drop__content {
+    max-width: 100%;
+  }
+
   /* events */
   .events {
     margin-bottom: 80px;
@@ -761,14 +734,87 @@
     font-size: 28px;
     line-height: 38px;
   }
+}
 
+@media (max-width: 320px) {
+
+  .burger {
+    width: 25px;
+    height: 21px;
+  }
+
+  .burger__line {
+    height: 2px;
+  }
+
+  .burger__line:nth-child(1) {
+    width: 25px;
+    transform: translateY(-9.5px);
+  }
+
+  .burger__line:nth-child(2) {
+    width: 16px;
+    transform: translateY(-1.5px);
+  }
+
+  .burger__line:nth-child(3) {
+    width: 10px;
+    transform: translateY(6.5px);
+  }
+
+  .header__search svg {
+    width: 17px;
+  }
+
+  .header__search {
+    height: 21px;
+    display: flex;
+    align-items: end;
+  }
+
+  /* main */
+  .main {
+    background-image: url(../img/main/size-320/main-background-img_1_320.png);
+  }
+
+  /* gallery */
+  .gallery {
+    background-image: url(../img/main/size-320/gallery-background-img_320.png);
+    background-position: center;
+  }
+
+  .gallery__drop-list {
+    margin-bottom: 30px;
+  }
+
+  .checkbox__list {
+    width: max-content;
+    margin-bottom: 30px;
+  }
+
+  .gallery__left-block {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    height: 367px;
+  }
+
+  /* catalog */
+  .catalog-drop__left {
+    width: 87%;
+    padding: 6px;
+    margin-right: 25px;
+  }
+
+  .catalog-drop__header {
+    font-size: 18px;
+  }
+
+  /* events */
   .events__card:not(:last-child) {
     width: 100%;
     margin: 0;
-  }
-
-  .events__card:nth-child(2) {
-    display: none;
   }
 
   .events-card__body {

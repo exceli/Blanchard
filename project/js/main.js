@@ -40,8 +40,8 @@ const gallery_swiper = new Swiper(".mySwiper", {
     768: {
       slidesPerView: 2,
     },
-    500: {
-      slidesPerView: 2,
+    480: {
+      slidesPerView: 1,
       spaceBetween: 35,
     },
     320: {
@@ -69,8 +69,8 @@ const swiper = new Swiper(".partners__swiper", {
       slidesPerView: 2,
       spaceBetween: 35,
     },
-    500: {
-      slidesPerView: 2,
+    480: {
+      slidesPerView: 1,
       spaceBetween: 35,
     },
     320: {
