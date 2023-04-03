@@ -221,10 +221,6 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
-  height: 100%;
-}
-
 .swiper__img {
   display: block;
   width: 100%;
@@ -516,7 +512,8 @@ body {
 
 .swiper-slide {
   width: 100%;
-  text-align: center;
+  height: auto;
+  /* text-align: center; */
   display: flex;
   justify-content: center;
 }
@@ -857,14 +854,37 @@ body {
   padding: 25px 0;
 }
 
-.catalog-drop__descr {
+.catalog-drop__artists {
   flex-direction: column;
   column-gap: 0;
   column-count: 3;
   font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 31px;
   color: #333;
+}
+
+.catalog-drop__item p {
+  max-width: max-content;
+  border-bottom: 1px solid transparent;
+  transition:
+    border var(--animation-time) ease-in-out,
+    background-color var(--animation-time) ease-in-out;
+}
+
+.catalog-drop__item:focus p {
+  background-color: var(--c-purple-3);
+}
+
+.catalog-drop__item:hover p {
+  border-bottom: 1px solid var(--c-purple-3);
+  background-color: transparent;
+}
+
+.catalog-drop__item:active p {
+  color: var(--c-purple-4);
+  border-color: var(--c-purple-);
+  background-color: transparent;
 }
 
 .catalog-drop__left {
@@ -931,15 +951,6 @@ body {
 /* events */
 .events {
   margin-bottom: 80px;
-}
-
-.events__card {
-  width: 34.4%;
-  max-width: 500px;
-}
-
-.events__card:not(:last-child) {
-  margin-right: 50px;
 }
 
 .events__head {
@@ -1016,6 +1027,61 @@ body {
 .card-body__detail:active {
   color: #333;
   border-color: #333;
+}
+
+.events__btn-wrap {
+  position: relative;
+}
+
+.events__btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 46.4%;
+  z-index: 2;
+  border-radius: 50%;
+  transition:
+    fill var(--animation-time) ease-in-out;
+}
+
+.events__btn:focus {
+  outline: 2px solid var(--c-purple-3);
+}
+
+.events__btn:hover path {
+  fill: var(--c-purple-1);
+  outline: none;
+}
+
+.events__btn:active {
+  outline: 2px solid var(--c-purple-3);
+}
+
+.events__btn:active path {
+  fill: var(--c-purple-2);
+}
+
+.events__btn-prev {
+  left: -25px;
+}
+
+.events__btn-prev {
+  transform: rotate(180deg);
+}
+
+.events__btn-next {
+  right: -25px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -6%;
+}
+
+.events__btn--hidden {
+  display: none;
 }
 
 /* project */

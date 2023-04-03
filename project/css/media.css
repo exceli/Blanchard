@@ -119,10 +119,6 @@
     margin-left: 0;
   }
 
-  .swiper-slide {
-    /* height: 315px; */
-  }
-
   /* catalog */
   .catalog__content {
     max-width: 100%;
@@ -140,11 +136,11 @@
     max-width: 100%;
   }
 
-  .catalog-drop__descr p:last-child {
+  .catalog-drop__item:last-child {
     display: none;
   }
 
-  .catalog-drop__descr {
+  .catalog-drop__artists {
     column-gap: 47px;
     column-count: 2;
   }
@@ -170,9 +166,9 @@
     margin-bottom: 122px;
   }
 
-  .events__card:not(:last-child) {
+  /* .events__card:not(:last-child) {
     margin-right: 27px;
-  }
+  } */
 
   .events-card__body {
     padding: 14px 33px;
@@ -383,6 +379,14 @@
     margin-bottom: 19px;
   }
 
+  .gallery__img {
+    height: 330px;
+  }
+
+  .gallery__block {
+    height: 100%;
+  }
+
   /* catalog */
   .catalog {
     margin-bottom: 80px;
@@ -420,11 +424,11 @@
     margin-bottom: 44px;
   }
 
-  .catalog-drop__descr p:last-child {
+  .catalog-drop__item:last-child {
     display: block;
   }
 
-  .catalog-drop__descr {
+  .catalog-drop__artists {
     column-gap: 42px;
     column-count: 3;
   }
@@ -442,20 +446,8 @@
   }
 
   /* events */
-  .events-card {
-    width: 50%;
-  }
-
-  .events__card:last-child {
+  .hidden {
     display: none;
-  }
-
-  .events__card:not(:last-child) {
-    margin-right: 35px;
-  }
-
-  .events__card:nth-child(2) {
-    margin-right: 0;
   }
 
   .events-card__img {
@@ -472,13 +464,16 @@
 
   .card-body__wrap-text {
     max-width: 95%;
-    margin-bottom: 30px;
+  }
+
+  .events__btn {
+    display: none;
   }
 
   /* project */
   .project__content {
     max-width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .partners__head {
@@ -634,6 +629,10 @@
     margin-bottom: 28px;
   }
 
+  .gallery__img {
+    height: 367px;
+  }
+
   .pages__count {
     margin-right: 22px;
   }
@@ -692,7 +691,7 @@
     font-size: 18px;
   }
 
-  .catalog-drop__descr p:last-child {
+  .catalog-drop__item:last-child {
     display: none;
   }
 
@@ -700,7 +699,7 @@
     padding: 20px 0;
   }
 
-  .catalog-drop__descr {
+  .catalog-drop__artists {
     column-count: 1;
   }
 
@@ -734,10 +733,180 @@
     font-size: 28px;
     line-height: 38px;
   }
+
+  .events-card__body {
+    padding: 17px 18px 47px 22px
+  }
+
+  .card-body__list {
+    margin-bottom: 11px;
+  }
+
+  .card-body__wrap {
+    margin-bottom: 14px;
+  }
+
+  .card-body__wrap-head {
+    margin-bottom: 4px;
+  }
+
+  .card-body__detail {
+    margin-left: 6px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -4.2%;
+  }
+
+  /* projects */
+  .project {
+    margin-bottom: 6px;
+  }
+
+  .project__head {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .project__content {
+    margin-bottom: 51px;
+  }
+
+  .partners__head {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .partners__btn {
+    margin-top: 2px;
+  }
+
+  .partners__btn-left {
+    margin-right: 17px;
+  }
+
+  .partners__btn-right {
+    margin-left: 18px;
+  }
+
+  .partners__item {
+    max-height: 100px;
+  }
+
+  .partners__freelands {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* contacts */
+  .contacts {
+    padding-bottom: 20px;
+    border: none;
+  }
+
+  .contacts__wrap {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__head {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .contacts__form {
+    margin-bottom: 20px;
+  }
+
+  .form__wrap {
+    flex-direction: column;
+    margin-bottom: 20.5px;
+  }
+
+  .form__input {
+    padding: 8.5px 23px;
+  }
+
+  .form__btn {
+    padding: 10px 33px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .contacts__social {
+    margin-left: 0;
+  }
+
+  .social__context {
+    margin-bottom: 6.5px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .social__wrap a:not(:last-child) {
+    margin-right: 15.5px;
+  }
+
+  .social__whatsapp {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social__telegram {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* map */
+  .map__wrap {
+    height: 320px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 23px 0;
+    padding-bottom: 20px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .footer__social {
+    margin-bottom: 23px;
+    margin-top: -3.5px;
+  }
+
+  .footer-social__vk {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-social__ok {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__logo {
+    width: 97px;
+  }
+
 }
 
 @media (max-width: 320px) {
 
+  /* header */
   .burger {
     width: 25px;
     height: 21px;
@@ -796,10 +965,6 @@
     width: 100%;
   }
 
-  .swiper-slide {
-    height: 367px;
-  }
-
   /* catalog */
   .catalog-drop__left {
     width: 87%;
@@ -812,168 +977,10 @@
   }
 
   /* events */
-  .events__card:not(:last-child) {
-    width: 100%;
-    margin: 0;
-  }
 
-  .events-card__body {
-    padding: 17px 18px 47px 22px
-  }
 
-  .card-body__list {
-    margin-bottom: 11px;
-  }
-
-  .card-body__wrap {
-    margin-bottom: 18px;
-  }
-
-  .card-body__wrap-head {
-    margin-bottom: 4px;
-  }
-
-  .card-body__detail {
-    margin-left: 6px;
-  }
-
-  /* projects */
-  .project {
-    margin-bottom: 6px;
-  }
-
-  .project__head {
-    margin-bottom: 12px;
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  .project__content {
-    margin-bottom: 51px;
-  }
-
-  .partners__head {
-    margin-bottom: 11px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-
-  .partners__btn {
-    margin-top: 2px;
-  }
-
-  .partners__btn-left {
-    margin-right: 17px;
-  }
-
-  .partners__btn-right {
-    margin-left: 18px;
-  }
-
+  /* partners */
   .partners__item {
-    max-height: 65px;
-  }
-
-  .partners__freelands {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* contacts */
-  .contacts {
-    padding-bottom: 20px;
-    border: none;
-  }
-
-  .contacts__wrap {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .contacts__head {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .contacts__form {
-    margin-bottom: 20px;
-  }
-
-  .form__wrap {
-    flex-direction: column;
-    margin-bottom: 20.5px;
-  }
-
-  .form__input {
-    padding: 8.5px 23px;
-  }
-
-  .form__btn {
-    padding: 10px 33px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input:first-child {
-    margin-bottom: 20px;
-  }
-
-  .contacts__social {
-    margin-left: 0;
-  }
-
-  .social__context {
-    margin-bottom: 6.5px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-
-  .social__wrap a:not(:last-child) {
-    margin-right: 15.5px;
-  }
-
-  .social__whatsapp {
-    width: 50px;
-    height: 50px;
-  }
-
-  .social__telegram {
-    width: 50px;
-    height: 50px;
-  }
-
-  /* map */
-  .map__wrap {
-    height: 320px;
-  }
-
-  /* footer */
-  .footer {
-    padding: 23px 0;
-    padding-bottom: 20px;
-  }
-
-  .footer__container {
-    flex-direction: column-reverse;
-  }
-
-  .footer__social {
-    margin-bottom: 23px;
-    margin-top: -3.5px;
-  }
-
-  .footer-social__vk {
-    width: 50px;
-    height: 50px;
-  }
-
-  .footer-social__ok {
-    width: 50px;
-    height: 50px;
-  }
-
-  .footer__logo {
-    width: 97px;
+    max-height: 64.5px;
   }
 }

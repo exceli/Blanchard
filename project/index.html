@@ -187,7 +187,7 @@
             </button>
           </div>
           <div class="gallery__wrap swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_1_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +202,7 @@
                 </svg>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_2_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +217,7 @@
                 </svg>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_3_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +232,7 @@
                 </svg>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_4_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,7 +247,7 @@
                 </svg>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_5_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -262,7 +262,7 @@
                 </svg>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery__block">
               <img class="gallery__img swiper__img" src="./img/main/gallery-img_6_1920.png" alt="">
               <div class="gallery-hover flex">
                 <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -316,32 +316,82 @@
                 </button>
                 <div class=" catalog__drop catalog-drop ac-panel">
                   <div class="catalog-drop__wrap">
-                    <div class="catalog-drop__descr">
-                      <p>Бенедетто ди&nbsp;Биндо</p>
-                      <p>Бергоньоне, Амброджо</p>
-                      <p>Биссоло, Франческо</p>
-                      <p>Больтраффио, Джованни</p>
-                      <p>Бонсиньори, Франческо</p>
-                      <p>Боттичини, Рафаэлло</p>
-                      <p>Брамантино</p>
-                      <p>Бреа, Людовико</p>
-                      <p>Бьяджо д’Антонио Туччи</p>
-                      <p>Веккьетта</p>
-                      <p>Андреа Верроккьо</p>
-                      <p>Доменико Гирландайо</p>
-                      <p>Беноццо Гоццоли</p>
-                      <p>Граначчи, Франческо</p>
-                      <p>Грегорио ди&nbsp;Чекко</p>
-                      <p>Джованни да&nbsp;Удине</p>
-                      <p>Джованни ди&nbsp;Паоло</p>
-                      <p>Джорджоне</p>
-                      <p>Парентино, Бернардо</p>
-                      <p>Пезеллино</p>
-                      <p>Пьетро Перуджино</p>
-                      <p>Перуцци, Бальдассаре</p>
-                      <p>Пизанелло</p>
-                      <p>Пинтуриккьо</p>
-                      <p>&nbsp;</p>
+                    <div class="catalog-drop__artists">
+                      <a class="catalog-drop__item" href="#">
+                        <p>Бенедетто ди&nbsp;Биндо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Бергоньоне, Амброджо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Биссоло, Франческо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Больтраффио, Джованни</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Бонсиньори, Франческо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Боттичини, Рафаэлло</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Бьяджо д’Антонио Туччи</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Брамантино</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Веккьетта</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Бреа, Людовико</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Андреа Верроккьо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Доменико Гирландайо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Беноццо Гоццоли</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Граначчи, Франческо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Грегорио ди&nbsp;Чекко</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Джованни да&nbsp;Удине</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Джованни ди&nbsp;Паоло</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Джорджоне</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Парентино, Бернардо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Пезеллино</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Пьетро Перуджино</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Перуцци, Бальдассаре</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Пизанелло</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>Пинтуриккьо</p>
+                      </a>
+                      <a class="catalog-drop__item" href="#">
+                        <p>&nbsp;</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -504,61 +554,120 @@
     <section id="events" class="events">
       <div class="container">
         <h2 class="events__head">События</h2>
-        <ul class="events__list list-reset flex">
-          <li class="events__card events-card">
-            <div class="events-card__wrap flex">
-              <img class="events-card__img" src="./img/main/Events_1.png" alt="">
-              <div class="events-card__body card-body flex">
-                <div class="card-body__wrap">
-                  <ul class="card-body__list card-top list-reset">
-                    <li class="card-top__place">Музей им. Щусева</li>
-                    <li class="card-top__time">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</li>
-                  </ul>
-                  <h3 class="card-body__wrap-head">Книжная гравюра в&nbsp;живом восприятии</h3>
-                  <p class="card-body__wrap-text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
-                    художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын&nbsp;Ридольфо</p>
+        <div class="events__btn-wrap">
+          <button class="events__btn events__btn-prev btn-reset">
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                fill="#ECECEC" />
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
+            </svg>
+          </button>
+          <div class="swiper events__swiper">
+            <div class="swiper-wrapper">
+              <div class="events__card events-card swiper-slide">
+                <div class="events-card__wrap flex">
+                  <img class="events-card__img" src="./img/main/Events_1.png" alt="">
+                  <div class="events-card__body card-body flex">
+                    <div class="card-body__wrap">
+                      <ul class="card-body__list card-top list-reset">
+                        <li class="card-top__place">Музей им. Щусева</li>
+                        <li class="card-top__time">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</li>
+                      </ul>
+                      <h3 class="card-body__wrap-head">Книжная гравюра в&nbsp;живом восприятии</h3>
+                      <p class="card-body__wrap-text">Один из&nbsp;ведущих флорентийских художников Кватроченто,
+                        основатель
+                        художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын&nbsp;Ридольфо</p>
+                    </div>
+                    <a class="card-body__detail" href="#">Подробнее</a>
+                  </div>
                 </div>
-                <a class="card-body__detail" href="#">Подробнее</a>
+              </div>
+              <div class="events__card events-card swiper-slide">
+                <div class="events-card__wrap flex">
+                  <img class="events-card__img" src="./img/main/Events_2.png" alt="">
+                  <div class="events-card__body card-body flex">
+                    <div class="card-body__wrap">
+                      <ul class="card-body__list card-top list-reset">
+                        <li class="card-top__place">ММОМА</li>
+                        <li class="card-top__time">24&nbsp;марта 19:00</li>
+                      </ul>
+                      <h3 class="card-body__wrap-head">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей Ильин.
+                      </h3>
+                      <p class="card-body__wrap-text">Высокий уровень вовлечения представителей целевой аудитории
+                        является
+                        чётким
+                        доказательством простого факта</p>
+                    </div>
+                    <a class="card-body__detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="events__card events-card swiper-slide">
+                <div class="events-card__wrap card-body flex">
+                  <img class="events-card__img" src="./img/main/Events_3.png" alt="">
+                  <div class="events-card__body flex">
+                    <div class="card-body__wrap">
+                      <ul class="card-body__list card-top list-reset">
+                        <li class="card-top__place">Еврейский музей</li>
+                        <li class="card-top__time">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</li>
+                      </ul>
+                      <h3 class="card-body__wrap-head">Выставка &laquo;Формация 2020&raquo;</h3>
+                      <p class="card-body__wrap-text">Идейные соображения высшего порядка, а&nbsp;также современная
+                        методология
+                        разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
+                    </div>
+                    <a class="card-body__detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="events__card events-card swiper-slide">
+                <div class="events-card__wrap card-body flex">
+                  <img class="events-card__img" src="./img/main/Events_4.png" alt="">
+                  <div class="events-card__body flex">
+                    <div class="card-body__wrap">
+                      <ul class="card-body__list card-top list-reset">
+                        <li class="card-top__place">ММАМ</li>
+                        <li class="card-top__time">с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая</li>
+                      </ul>
+                      <h3 class="card-body__wrap-head">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
+                      <p class="card-body__wrap-text">Один из&nbsp;ведущих флорентийских художников Кватроченто,
+                        основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
+                    </div>
+                    <a class="card-body__detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="events__card events-card swiper-slide">
+                <div class="events-card__wrap card-body flex">
+                  <img class="events-card__img" src="./img/main/Events_5.png" alt="">
+                  <div class="events-card__body flex">
+                    <div class="card-body__wrap">
+                      <ul class="card-body__list card-top list-reset">
+                        <li class="card-top__place">Третьяковка на&nbsp;Крымском валу</li>
+                        <li class="card-top__time">с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</li>
+                      </ul>
+                      <h3 class="card-body__wrap-head">XXIV Международная биеннале молодого искусства</h3>
+                      <p class="card-body__wrap-text">Внезапно, реплицированные с&nbsp;зарубежных источников,
+                        современные
+                        исследования</p>
+                    </div>
+                    <a class="card-body__detail" href="#">Подробнее</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </li>
-          <li class="events__card events-card">
-            <div class="events-card__wrap flex">
-              <img class="events-card__img" src="./img/main/Events_2.png" alt="">
-              <div class="events-card__body card-body flex">
-                <div class="card-body__wrap">
-                  <ul class="card-body__list card-top list-reset">
-                    <li class="card-top__place">ММОМА</li>
-                    <li class="card-top__time">24&nbsp;марта 19:00</li>
-                  </ul>
-                  <h3 class="card-body__wrap-head">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей Ильин.</h3>
-                  <p class="card-body__wrap-text">Высокий уровень вовлечения представителей целевой аудитории является
-                    чётким
-                    доказательством простого факта</p>
-                </div>
-                <a class="card-body__detail" href="#">Подробнее</a>
-              </div>
-            </div>
-          </li>
-          <li class="events__card events-card">
-            <div class="events-card__wrap card-body flex">
-              <img class="events-card__img" src="./img/main/Events_3.png" alt="">
-              <div class="events-card__body flex">
-                <div class="card-body__wrap">
-                  <ul class="card-body__list card-top list-reset">
-                    <li class="card-top__place">Еврейский музей</li>
-                    <li class="card-top__time">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</li>
-                  </ul>
-                  <h3 class="card-body__wrap-head">Выставка &laquo;Формация 2020&raquo;</h3>
-                  <p class="card-body__wrap-text">Идейные соображения высшего порядка, а&nbsp;также современная
-                    методология
-                    разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
-                </div>
-                <a class="card-body__detail" href="#">Подробнее</a>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+          <button class="events__btn events__btn-next btn-reset">
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                fill="#ECECEC" />
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
+            </svg>
+          </button>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
     <section id="project" class="project">
@@ -748,6 +857,7 @@
   <script src="./js/accordion.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 
 
 </html>
