@@ -1,8 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("burger").addEventListener("click", function () {
+    document.querySelector(".header").classList.toggle("open")
+  })
+
+  let navLinks = document.querySelectorAll(".nav__link");
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", function () {
+      document.querySelector(".header").classList.remove("open")
+    });
+  }
+})
+
 const main_swiper = new Swiper('.swiper-container', {
-  // Цикличность
   loop: true,
 
-  // Автоматическое перелистывание
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,

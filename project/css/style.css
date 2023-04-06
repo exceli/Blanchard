@@ -112,21 +112,28 @@ body {
   align-items: center;
 }
 
+.burger {
+  display: none;
+}
+
 .header__href {
-  margin-right: auto;
   min-width: max-content;
+  margin-right: 0vmax;
 }
 
 .header__nav {
-  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+.nav__list {
+  justify-content: space-between;
+  width: 60.4%;
+  min-width: 600px;
 }
 
 .nav__link {
-  padding: 2px 6px;
   font-weight: 600;
   color: var(--c-white);
   transition:
@@ -140,7 +147,7 @@ body {
 
 .nav__link:hover {
   color: var(--c-purple-2);
-  background-color: var(--c-black);
+  background-color: transparent;
 }
 
 .nav__link:active {
@@ -148,17 +155,18 @@ body {
 }
 
 .header__login {
-  min-width: max-content;
-  margin-left: auto;
   margin-right: -7px;
   padding: 7px 6px;
   color: var(--c-white);
   transition:
-    color var(--animation-time) ease-in-out,
-    background-color var(--animation-time) ease-in-out;
+    color var(--animation-time),
+    background-color var(--animation-time) ease-in-out,
+    outline var(--animation-time) ease-in-out;
 }
 
 .header__login svg {
+  width: 14px;
+  height: 13px;
   margin-right: 6px;
   fill: var(--c-white);
   transition: fill var(--animation-time) ease-in-out;
@@ -170,7 +178,7 @@ body {
 
 .header__login:hover {
   color: var(--c-purple-2);
-  background-color: var(--c-black);
+  background-color: transparent;
 }
 
 .header__login:hover svg {
@@ -1383,11 +1391,16 @@ body {
 
 .contacts__form {
   align-items: center;
-  margin-right: 80px;
+  margin-right: 82px;
 }
 
+/* .form__wrap {
+  width: 83%;
+} */
+
 .form__input {
-  width: 100%;
+  /* min-width: 270px; */
+  width: 14vw;
   margin-right: 20px;
   padding: 14px 23px;
   border: 1px solid #333;
@@ -1411,7 +1424,8 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--c-purple-3);
-  transition: color var(--animation-time) ease-in-out,
+  transition:
+    color var(--animation-time) ease-in-out,
     background-color var(--animation-time) ease-in-out,
     outline var(--animation-time) ease-in-out;
 }
@@ -1436,9 +1450,10 @@ body {
 
 .social__context {
   margin-bottom: 10px;
+  padding-top: 2px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 25px;
+  line-height: 24px;
   color: #333;
 }
 
