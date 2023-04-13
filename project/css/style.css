@@ -252,7 +252,7 @@ body {
 .main__menu-list {
   justify-content: space-between;
   width: 64.7%;
-  min-width: 700px;
+  min-width: 800px;
 }
 
 .main__menu-item {
@@ -534,29 +534,84 @@ body {
   object-fit: cover;
 }
 
-.gallery-hover {
-  position: absolute;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  top: 20px;
-  left: 24.5px;
-  width: 85.7%;
-  height: 72.9%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.gallery-hover svg {
-  padding-bottom: 10px;
+.gallery__wrap {
+  height: auto;
 }
 
 .gallery__img {
   max-height: 367px;
 }
 
-.gallery__img:focus {
+.gallery__href:focus .gallery__img {
   outline: 3px solid var(--c-purple-4);
   outline-offset: -3px;
+}
+
+.gallery__href:focus-visible {
+  outline: none;
+}
+
+.modal__window {
+  min-width: 885px;
+  background-color: var(--c-white);
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
+}
+
+.modal__img {
+  object-fit: cover;
+}
+
+.modal__right {
+  padding: 121px 50px;
+}
+
+.modal__author {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333;
+}
+
+.modal__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+}
+
+.modal__years {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.modal__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+}
+
+.modal__close {
+  background-image: none;
+  top: 20px;
+  right: 20px;
+  transition: fill var(--animation-time) ease-in-out;
+}
+
+.modal__close:hover path {
+  fill: var(--c-purple-3);
+}
+
+.modal__close:hover path {
+  fill: var(--c-purple-4);
+}
+
+.hystmodal__close:focus {
+  outline: none;
 }
 
 .checkbox__input+.checkbox__text::before {

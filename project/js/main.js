@@ -149,10 +149,9 @@ const partners_swiper = new Swiper(".partners__swiper", {
   },
 
   autoplay: {
-    delay: 300,
+    delay: 5000,
     disableOnInteraction: false,
   },
-  speed: 4000,
 
   breakpoints: {
     1250: {
@@ -186,3 +185,7 @@ const choices = new Choices(element, {
 })
 
 new Accordion('.accordion-container');
+
+const Modal = new HystModal({
+  linkAttributeName: "data-hystmodal",
+});

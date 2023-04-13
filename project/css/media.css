@@ -205,6 +205,14 @@
     margin-left: 0;
   }
 
+  .modal__window {
+    min-width: 594px;
+  }
+
+  .modal__img {
+    min-width: 264px;
+  }
+
   /* catalog */
   .catalog__content {
     max-width: 100%;
@@ -467,6 +475,10 @@
 
   .gallery__block {
     height: 100%;
+  }
+
+  .modal__img {
+    min-width: 301px;
   }
 
   /* catalog */
@@ -734,6 +746,23 @@
 
   .pages__next {
     padding: 4.5px 11.5px;
+  }
+
+  .modal__window {
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .hystmodal--active .hystmodal__window {
+    transform: scale(.9);
+  }
+
+  .modal__right {
+    padding: 17px 18px;
+  }
+
+  .modal__years {
+    margin-bottom: 12px;
   }
 
   /* catalog */

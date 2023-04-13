@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+  <link rel="stylesheet" href="./css/hystmodal.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
@@ -18,9 +19,36 @@
 </head>
 
 <body>
+  <div class="hystmodal modal" id="Modal" aria-hidden="true">
+    <div class="hystmodal__wrap modal__wrap">
+      <div class="hystmodal__window modal__window flex" role="dialog" aria-modal="true">
+        <img class="modal__img" src="./img/main/modal-2.png" alt="">
+        <div class="modal__right">
+          <h5 class="modal__author">Казимир Малевич</h5>
+          <p class="modal__name">«Женщина с граблями»</p>
+          <p class="modal__years">1931–1932</p>
+          <p class="modal__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+            Художник
+            принялся
+            за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был
+            утерян
+            после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+        </div>
+        <button data-hystclose class="hystmodal__close modal__close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+              fill="black" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="container header__container flex">
-      <button id="burger" class="burger btn-reset" id="burger">
+      <button id="burger" class="burger btn-reset">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -188,94 +216,34 @@
           </div>
           <div class="gallery__wrap swiper-wrapper">
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_1_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_1_1920.png" alt="">
+              </a>
             </div>
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_2_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_2_1920.png" alt="">
+              </a>
             </div>
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_3_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_3_1920.png" alt="">
+              </a>
             </div>
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_4_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_4_1920.png" alt="">
+              </a>
             </div>
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_5_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_5_1920.png" alt="">
+              </a>
             </div>
             <div class="swiper-slide gallery__block">
-              <img class="gallery__img swiper__img" src="./img/main/gallery-img_6_1920.png" alt="">
-              <div class="gallery-hover flex">
-                <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="25.1624" height="6.2906"
-                    transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1966)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M44.2696 65.7708C28.041 65.7708 14.8852 52.6834 14.8852 36.5393C14.8852 20.3952 28.041 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.9839 73.0786 7.53917 56.7194 7.53917 36.5393C7.53917 16.3592 23.9839 0 44.2696 0C64.5552 0 80.9999 16.3592 80.9999 36.5393C80.9999 56.7194 64.5552 73.0786 44.2696 73.0786Z"
-                    fill="white" />
-                  <path d="M41.9999 24L41.9999 48.9999L47.9954 48.9999L47.9954 23.9999L41.9999 24Z" fill="white" />
-                  <path d="M57.2335 33.9999L32.2336 33.9999L32.2336 39.9954L57.2336 39.9954L57.2335 33.9999Z"
-                    fill="white" />
-                </svg>
-              </div>
+              <a class="gallery__href" href="#" data-hystmodal="#Modal">
+                <img class="gallery__img swiper__img" src="./img/main/gallery-img_6_1920.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -855,6 +823,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+  <script src="./js/hystmodal.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
