@@ -240,7 +240,7 @@ body {
   position: relative;
   top: 0;
   z-index: 2;
-  padding: 23px 0;
+  padding: 22.5px 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -256,15 +256,204 @@ body {
 }
 
 .main__menu-item {
-  /* min-width: max-content; */
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 10px;
-  color: var(--c-white);
+  position: relative;
 }
 
-.main__menu-item svg {
+.main__menu-item.open .main__menu-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main__menu-link {
+  align-items: center;
+  color: var(--c-white);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  transition:
+    color var(--animation-time),
+    background-color var(--animation-time);
+}
+
+.main__menu-svg {
+  margin-top: 2px;
   margin-left: 4px;
+  stroke: var(--c-white);
+  transition:
+    stroke var(--animation-time),
+    transform .5s;
+}
+
+.main__menu-item.open .main__menu-svg {
+  transform: rotate(180deg);
+}
+
+.main__menu-link:focus {
+  background-color: var(--c-purple-4);
+}
+
+.main__menu-link:hover {
+  color: var(--c-purple-3);
+  background-color: transparent;
+}
+
+.main__menu-link:hover .main__menu-svg {
+  stroke: var(--c-purple-3);
+}
+
+.main__menu-link:active {
+  color: var(--c-purple-4);
+}
+
+.main__menu-link:active .main__menu-svg {
+  stroke: var(--c-purple-4);
+}
+
+.main__menu-wrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 22.5px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main__menu-window {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main__menu-submenu {
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.main-menu__submenu-link {
+  display: block;
+  padding: 9px 14px;
+  color: var(--c-white);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-menu__submenu-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.simplebar-offset {
+  height: 250px;
+}
+
+.simplebar-scrollbar::before {
+  width: 2px;
+  background-color: var(--c-white);
+  border-radius: 0;
+}
+
+[data-simplebar] {
+  overflow: auto;
+}
+
+.simplebar-track .simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}
+
+.simplebar-content-wrapper {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  display: initial;
+  width: initial;
+  height: initial;
+}
+
+.main-menu__submenu-tintoretto {
+  background-image: url(../img/main/drop-list-realizm-tintoretto.png);
+}
+
+.main-menu__submenu-friedrich {
+  background-image: url(../img/main/drop-list-realizm-friedrich.png);
+}
+
+.main-menu__submenu-leonardo {
+  background-image: url(../img/main/drop-list-realizm-leonardo.png);
+}
+
+.main-menu__submenu-verrocchio {
+  background-image: url(../img/main/drop-list-realizm-verrocchio.png);
+}
+
+.main-menu__submenu-mone {
+  background-image: url(../img/main/drop-list-realizm-mone.png);
+}
+
+.main-menu__submenu-sisley {
+  background-image: url(../img/main/drop-list-realizm-sisley.png);
+}
+
+.main-menu__submenu-mane {
+  background-image: url(../img/main/drop-list-realizm-mane.png);
+}
+
+.main-menu__submenu-renuar {
+  background-image: url(../img/main/drop-list-realizm-renuar.png);
+}
+
+.main-menu__submenu-van_gogh {
+  background-image: url(../img/main/drop-list-realizm-van_gogh.png);
+}
+
+.main-menu__submenu-cezanne {
+  background-image: url(../img/main/drop-list-realizm-cezanne.png);
+}
+
+.main-menu__submenu-gauguin {
+  background-image: url(../img/main/drop-list-realizm-gauguin.png);
+}
+
+.main-menu__submenu-sera {
+  background-image: url(../img/main/drop-list-realizm-sera.png);
+}
+
+.main-menu__submenu-kandinsky {
+  background-image: url(../img/main/drop-list-realizm-kandinsky.png);
+}
+
+.main-menu__submenu-marinette {
+  background-image: url(../img/main/drop-list-realizm-marinette.png);
+}
+
+.main-menu__submenu-malevich {
+  background-image: url(../img/main/drop-list-realizm-malevich.png);
+}
+
+.main-menu__submenu-picasso {
+  background-image: url(../img/main/drop-list-realizm-picasso.png);
+}
+
+.main-menu__submenu-carra {
+  background-image: url(../img/main/drop-list-realizm-carra.png);
+}
+
+.main-menu__submenu-pratella {
+  background-image: url(../img/main/drop-list-realizm-pratella.png);
+}
+
+.main-menu__submenu-severini {
+  background-image: url(../img/main/drop-list-realizm-severini.png);
+}
+
+.main-menu__submenu-balla {
+  background-image: url(../img/main/drop-list-realizm-balla.png);
 }
 
 .main__search-wrap {
@@ -309,7 +498,7 @@ body {
 .main__content {
   position: relative;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   padding: 63px 0;
 }
@@ -333,7 +522,7 @@ body {
 }
 
 .main__content-btn {
-  margin-bottom: 58.5px;
+  margin-bottom: 59px;
   padding: 22.5px 35px;
   pointer-events: auto;
   font-weight: 700;

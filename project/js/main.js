@@ -1,15 +1,32 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("burger").addEventListener("click", function () {
-    document.querySelector(".header").classList.toggle("open")
-  })
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector('.header');
+  const menuItems = document.querySelectorAll('.main__menu-item');
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelectorAll('.nav__link');
 
-  let navLinks = document.querySelectorAll(".nav__link");
-  for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", function () {
-      document.querySelector(".header").classList.remove("open")
+  burger.addEventListener('click', () => header.classList.toggle('open'));
+
+  navLinks.forEach(link => link.addEventListener('click', () => header.classList.remove('open')));
+
+  menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', () => {
+      menuItem.classList.toggle('open');
+      menuItems.forEach(openMenuItem => {
+        if (openMenuItem !== menuItem) {
+          openMenuItem.classList.remove('open');
+        }
+      });
     });
-  }
-})
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key == 'Escape') {
+      header.classList.remove('open');
+      menuItems.forEach(menuItem => menuItem.classList.remove('open'));
+    }
+  });
+});
+
 
 const main_swiper = new Swiper('.swiper-container', {
   loop: true,

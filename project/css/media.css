@@ -22,8 +22,16 @@
       background-color var(--animation-time);
   }
 
+  .burger:focus .burger__line {
+    background-color: var(--c-purple-2);
+  }
+
   .burger:hover .burger__line {
     background-color: var(--c-purple-2);
+  }
+
+  .burger:active .burger__line {
+    background-color: var(--c-purple-4);
   }
 
   .burger__line {

@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
   <link rel="stylesheet" href="./css/hystmodal.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -101,27 +103,107 @@
           <div class="container">
             <div class="main__menu-container flex">
               <ul class="main__menu-list list-reset flex">
-                <li class="main__menu-item">Реализм<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L6 6L1 1" stroke="white" />
-                  </svg>
+                <li class="main__menu-item">
+                  <button class="main__menu-link btn-reset flex">
+                    Реализм
+                    <svg class="main__menu-svg" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1" />
+                    </svg>
+                  </button>
+                  <div class="main__menu-wrap">
+                    <div class="main__menu-window" data-simplebar>
+                      <div class="main__menu-submenu">
+                        <a class="main-menu__submenu-link main-menu__submenu-tintoretto" href="#">Тинторетто</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-friedrich" href="#">Фридрих</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-leonardo" href="#">Леонардо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-verrocchio" href="#">Верроккьо</a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li class="main__menu-item">Импрессионизм<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L6 6L1 1" stroke="white" />
-                  </svg></li>
-                <li class="main__menu-item">Постимпрессионизм<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L6 6L1 1" stroke="white" />
-                  </svg></li>
-                <li class="main__menu-item">Авангард<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L6 6L1 1" stroke="white" />
-                  </svg></li>
-                <li class="main__menu-item">Футуризм<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L6 6L1 1" stroke="white" />
-                  </svg></li>
+                <li class="main__menu-item">
+                  <button class="main__menu-link btn-reset flex">
+                    Импрессионизм
+                    <svg class="main__menu-svg" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1" />
+                    </svg>
+                  </button>
+                  <div class="main__menu-wrap">
+                    <div class="main__menu-window">
+                      <div class="main__menu-submenu" data-simplebar>
+                        <a class="main-menu__submenu-link main-menu__submenu-mone" href="#">Моне</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-sisley" href="#">Сислей</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-mane" href="#">Мане</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-renuar" href="#">Ренуар</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main__menu-item">
+                  <button class="main__menu-link btn-reset flex">
+                    Постимпрессионизм
+                    <svg class="main__menu-svg" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1" />
+                    </svg>
+                  </button>
+                  <div class="main__menu-wrap">
+                    <div class="main__menu-window" data-simplebar>
+                      <div class="main__menu-submenu">
+                        <a class="main-menu__submenu-link main-menu__submenu-van_gogh" href="#">Ван&nbsp;Гог</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-cezanne" href="#">Сезанн</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-gauguin" href="#">Гоген</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-sera" href="#">Сёра</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main__menu-item">
+                  <button class="main__menu-link btn-reset flex">
+                    Авангард
+                    <svg class="main__menu-svg" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1" />
+                    </svg>
+                  </button>
+                  <div class="main__menu-wrap">
+                    <div class="main__menu-window" data-simplebar>
+                      <div class="main__menu-submenu">
+                        <a class="main-menu__submenu-link main-menu__submenu-kandinsky" href="#">Кандинский</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-marinette" href="#">Маринетти</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-malevich" href="#">Малевич</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-picasso" href="#">Пикассо</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main__menu-item">
+                  <button class="main__menu-link btn-reset flex">
+                    Футуризм
+                    <svg class="main__menu-svg" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1" />
+                    </svg>
+                  </button>
+                  <div class="main__menu-wrap">
+                    <div class="main__menu-window" data-simplebar>
+                      <div class="main__menu-submenu">
+                        <a class="main-menu__submenu-link main-menu__submenu-carra" href="#">Карра</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-pratella" href="#">Прателла</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-severini" href="#">Северини</a>
+                        <a class="main-menu__submenu-link main-menu__submenu-balla" href="#">Балла</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
               <form class="main__search-wrap flex" action="">
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
