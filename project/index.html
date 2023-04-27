@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </head>
 
 <body>
@@ -856,10 +857,15 @@
           <h3 class="contacts__head">Шоурум &#8470;4</h3>
           <p class="contacts__address">Леонтьевский переулок, дом 5/1</p>
         </div>
-        <form class="contacts__form form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <form id="form" class="contacts__form form flex" action="https://jsonplaceholder.typicode.com/posts"
+          method="post" autocomplete="off">
           <div class="form__wrap flex">
-            <input class="form__input form__name" type="text" placeholder="Имя*" name="Имя">
-            <input class="form__input form__phone" type="phone" placeholder="Телефон*" name="Телефон">
+            <div class="form__input-box">
+              <input id="name" class="form__input form__name" type="text" placeholder="Имя*" name="Имя">
+            </div>
+            <div class="form__input-box">
+              <input id="phone" class="form__input form__phone" type="text" placeholder="Телефон*" name="Телефон">
+            </div>
           </div>
           <button class="form__btn btn-reset">Заказать обратный звонок</button>
         </form>

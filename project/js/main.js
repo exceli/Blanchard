@@ -206,3 +206,26 @@ new Accordion('.accordion-container');
 const Modal = new HystModal({
   linkAttributeName: "data-hystmodal",
 });
+
+let validation = new JustValidate('#form')
+
+validation.addField("#name", [
+  {
+    rule: 'required',
+    errorMessage: 'Введите имя'
+  },
+])
+
+validation.addField("#phone", [
+  {
+    rule: 'required',
+    errorMessage: 'Введите телефон'
+  },
+])
+
+var element1 = document.getElementById('phone');
+var maskOptions = {
+  mask: '+{7} (000)000-00-00'
+};
+var mask = IMask(element1, maskOptions);
+

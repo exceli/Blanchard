@@ -387,7 +387,6 @@ body {
 }
 
 .simplebar-track.simplebar-vertical {
-  /* margin-top: 40px; */
   width: 2px;
 }
 
@@ -498,12 +497,13 @@ body {
   text-align: justify;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
 }
 
 .main__search-input {
   margin-left: 9px;
   margin-bottom: 1px;
-  min-width: 218px;
+  width: 100%;
   cursor: pointer;
   background-color: transparent;
   border: none;
