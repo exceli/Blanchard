@@ -60,10 +60,10 @@ const gallery_swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 50,
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   navigation: {
     nextEl: ".pages__next",
