@@ -955,7 +955,7 @@ body {
 /* catalog */
 .catalog {
   padding-top: 80px;
-  margin-bottom: 74px;
+  margin-bottom: 80px;
 }
 
 .catalog__header {
@@ -1016,7 +1016,7 @@ body {
 }
 
 .catalog__item:not(:first-child) {
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .catalog__item .catalog__item-wrap {
@@ -1682,7 +1682,7 @@ body {
 
 .form__input {
   /* min-width: 270px; */
-  width: 14vw;
+  width: 100%;
   margin-right: 20px;
   padding: 14px 23px;
   border: 1px solid #333;
