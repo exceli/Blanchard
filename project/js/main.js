@@ -27,6 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', (e) => {
+  // открытие
+  document.getElementById('open-search-form').addEventListener('click',
+    (e) => {
+      document.getElementById('search-form').classList.add('search-form-show')
+    })
+
+  // закрытие
+  document.getElementById('search-form-close').addEventListener('click',
+    (e) => {
+      document.getElementById('search-form').classList.remove('search-form-show')
+    })
+
+  // отмена отправки формы
+  document.getElementById('search-form').addEventListener('submit',
+    (e) => {
+      e.preventDefault()
+    })
+})
 
 const main_swiper = new Swiper('.swiper-container', {
   loop: true,
